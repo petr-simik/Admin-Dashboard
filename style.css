@@ -1,0 +1,256 @@
+@import "modern-normalize";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Rubik+Mono+One&display=swap');
+
+:root {
+  line-height: 1.5;
+}
+
+body {
+    overflow: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    width: max-content;
+    margin: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+li {
+    transition: 0.2s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(1fr 1fr 1fr);
+    height: 100vh;
+    width: fit-content;
+    overflow: auto;
+}
+
+.dashboard {
+    display: flex;
+    gap: 0px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 25px;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.dashboardIcon {
+    width: 50px;
+}
+
+.header {
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nameContainer {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.nameContainer svg {
+    fill: black;
+    transition: 0.5s;
+}
+
+.nameContainer svg:hover {
+    transform: scale(1.1);
+}
+
+.profilePicture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profilePicture2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    gap: 1em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+}
+
+.navText {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.navContainer button{
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #0ea5e9;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-inline: 1em;
+    transition: 0.5s;
+}
+
+.navContainer button:hover {
+    transform: scale(1.07);
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
+}
+
+.sidebar {
+    z-index: 10;
+    grid-column: 1 / 2;
+    grid-row: span 3;
+    background-color: #0ea5e9;
+    padding: 20px 0px 0px 20px;
+    color: white;
+    width: 100%;
+}
+
+.mainContainer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 9em 1em 1em 2em;
+    background-color: #f4f4f9;
+}
+
+.yourProjects {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.yourProjects > div {
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    height: 250px;
+    flex-wrap: wrap;
+    margin: 15px;
+    background: linear-gradient(90deg, #ffc23e 0%, #ffc23e 2%, #ffffff 2%);
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.yourProjects > div:hover {
+    transform: scale(1.03);
+}
+
+
+.announcements .smallContainer, .trending {
+    margin-bottom: 20px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > div {
+    overflow: auto;
+    max-width: 350px;
+    height: fit-content;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.announcements > div:hover {
+    transform: scale(1.03);
+}
+
+svg {
+    width: 35px;
+    fill: white;
+    margin: 0;
+}
+
+.searchIcon {
+    fill: black;
+}
+
+.search {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(189, 189, 189);
+    padding-left: 10px;
+}
+
