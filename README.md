@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-## [Live Demo](https://qsoftin.github.io/Admin-Dashboard/)
+## [Live Demo](https://petr-simik.github.io/Admin-Dashboard/)
 
  Mini project from The Odin Project - Admin Dashboard
 
